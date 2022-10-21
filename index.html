@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
 <body>
 
-  Learn to code by watching others
+  <main class="main-container">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <!-- Information Container -->
 
-  Try it free 7 days then $20/mo. thereafter
+    <div class="info-container">
+      <h1 class="info-container__title">Learn to code by watching others</h1>
+      <p class="info-container__paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+      <button class="info-container__btn">
+        <span class="bold-text">Try it free 7 days</span>
+        then $20/mo. thereafter
+      </button>
+    </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+    <!-- Form Container -->
 
-  Claim your free trial 
+    <div class="form-container">
+       <form>
+          <input class="form-container__input" type="text" placeholder="First Name">
+          <input class="form-container__input" type="text" placeholder="Last Name">
+          <input class="form-container__input" type="text" placeholder="Email Address">
+          <input class="form-container__input" type="password" placeholder="Password">
+          <button class="form-container__btn" >Claim your free trial</button>
+       </form>
+       <small class="term-and-services-text" >By clicking the button, you are agreeing to our <a class="term-and-services-link" href="#">Terms and Services</a></small>
+    </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
+  </main>
+
+  
   
   <footer>
     <p class="attribution">
