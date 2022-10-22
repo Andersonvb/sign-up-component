@@ -31,27 +31,33 @@
 
         <div class="form-container">
           <form>
+
             <div class="input-container">
-              <input class="input-container__input" type="text" placeholder="First Name">
-              <img class="hidden error-icon" src="./images/icon-error.svg" alt="Error Icon">
-              <small class="hidden input-container__error-message">First name cannot be empty</small>
+              <input class="input-container__input" id="name-input" type="text" placeholder="First Name">
+              <img class="hidden error-icon" id="name-error-icon" src="./images/icon-error.svg" alt="Error Icon">
+              <small class="hidden input-container__error-message" id="name-error-message">First name cannot be empty</small>
             </div>
+
             <div class="input-container">
-              <input class="input-container__input" type="text" placeholder="Last Name">
-              <img class="hidden error-icon" src="./images/icon-error.svg" alt="Error Icon">
-              <small class="hidden input-container__error-message">Last name cannot be empty</small>
+              <input class="input-container__input" id="last-name-input" type="text" placeholder="Last Name">
+              <img class="hidden error-icon" id="last-name-error-icon" src="./images/icon-error.svg" alt="Error Icon">
+              <small class="hidden input-container__error-message" id="last-name-error-message">Last name cannot be empty</small>
             </div>
+
             <div class="input-container">
-              <input class="input-container__input" type="text" placeholder="Email Address">
-              <img class="hidden error-icon" src="./images/icon-error.svg" alt="Error Icon">
-              <small class="hidden nput-container__error-message">Looks like this is not an email</small>
+              <input class="input-container__input" id="email-input" type="email" placeholder="Email Address">
+              <img class="hidden error-icon" id="email-error-icon" src="./images/icon-error.svg" alt="Error Icon">
+              <small class="hidden input-container__error-message" id="email-error-message">Looks like this is not an email</small>
             </div>
+
             <div class="input-container">
-              <input class="input-container__input" type="password" placeholder="Password">
-              <img class="hidden error-icon" src="./images/icon-error.svg" alt="Error Icon">
-              <small class="hidden input-container__error-message">Password cannot be empty</small>
+              <input class="input-container__input" id="password-input" type="password" placeholder="Password">
+              <img class="hidden error-icon" id="password-error-icon" src="./images/icon-error.svg" alt="Error Icon">
+              <small class="hidden input-container__error-message" id="password-error-message">Password cannot be empty</small>
             </div>
-            <button class="form-container__btn" >CLAIM YOUR FREE TRIAL</button>
+
+            <button class="form-container__btn" id="btn" >CLAIM YOUR FREE TRIAL</button>
+
           </form>
           <small class="term-and-services-text" >By clicking the button, you are agreeing to our <a class="term-and-services-link" href="#">Terms and Services</a></small>
       </div>
@@ -61,8 +67,6 @@
     </section>
 
   </main>
-
-  
   
   <footer>
     <p class="attribution">
@@ -70,5 +74,7 @@
       Coded by <a href="#">Anderson Valencia</a>.
     </p>
   </footer>
+
+  <script src="./src/app.js" ></script>
 </body>
 </html>
