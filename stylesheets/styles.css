@@ -188,6 +188,10 @@ body {
 
 @media screen and (min-width: 1300px) {
 
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
   .main-container {
     height: 100vh;
     flex-direction: row;
